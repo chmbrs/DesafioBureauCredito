@@ -16349,29 +16349,22 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h1 style="color:#BA307E;"><center>Armazenamento, Processamento e Disponibilização</center></h1></p>
-<h2 style="color:#992882;"><center>Estrutura baseada  em micro-serviços</center></h2>
+<p><h1 style="color:#BA307E;"><center>Armazenamento, Processamento e Disponibilização de Dados</center></h1></p>
+<h2 style="color:#992882;"><center>Bureu de Crédito</center></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3><b> Intro</b></h3>
+<h2><b>Arquitetura</b></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Temos-3-bases-de-dados-externas:">Temos 3 bases de dados externas:<a class="anchor-link" href="#Temos-3-bases-de-dados-externas:">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="files\bases.jpeg"></p>
+<p><img src="./files/arqui.png" alt="Por favor abrir o arquivo junto com a pasta files/"></p>
 
 </div>
 </div>
@@ -16379,14 +16372,61 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Cada-base-tem-as-seguintes-particularidades-e-requerimentos:">Cada base tem as seguintes particularidades e requerimentos:<a class="anchor-link" href="#Cada-base-tem-as-seguintes-particularidades-e-requerimentos:">&#182;</a></h4>
+<h2><b>Introdução</b></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><table>
+<h5 id="Exemplo"><i>Exemplo</i><a class="anchor-link" href="#Exemplo">&#182;</a></h5>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Temos-3-bases-de-dados-externas:">Temos 3 bases de dados externas:<a class="anchor-link" href="#Temos-3-bases-de-dados-externas:">&#182;</a></h4><h4 id="Base-A">Base A<a class="anchor-link" href="#Base-A">&#182;</a></h4><table>
+  <tr>
+    <th>ID</th>
+    <th>CPF</th>
+    <th>Nome</th>
+    <th>Endereço</th>
+    <th>Dividas</th>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+</table><h4 id="Base-B">Base B<a class="anchor-link" href="#Base-B">&#182;</a></h4><table>
+  <tr>
+    <th>ID</th>
+    <th>Idade</th>
+    <th>Renda</th>
+    <th>Bens</th>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+</table><h4 id="Base-C">Base C<a class="anchor-link" href="#Base-C">&#182;</a></h4><ul>
+<li>Última consulta do CPF em um Bureau de crédito.</li>
+<li>Movimentação financeira nesse CPF.</li>
+<li>Dados relacionados a última compra com cartao de crédito vinculado ao CPF.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Cada-um-tem-particularidades-e-requerimentos:">Cada um tem particularidades e requerimentos:<a class="anchor-link" href="#Cada-um-tem-particularidades-e-requerimentos:">&#182;</a></h4><table id="particularities">
   <tr>
     <th>Base</th>
     <th>Segurança</th>
@@ -16407,23 +16447,83 @@ div#notebook {
     <td>Baixa</td>
     <td>Alta</td>
   </tr>
-</table></p>
-<script charset="utf-8">var TGSort=window.TGSort||function(n){"use strict";function r(n){return n.length}function t(n,t){if(n)for(var e=0,a=r(n);a>e;++e)t(n[e],e)}function e(n){return n.split("").reverse().join("")}function a(n){var e=n[0];return t(n,function(n){for(;!n.startsWith(e);)e=e.substring(0,r(e)-1)}),r(e)}function o(n,r){return-1!=n.map(r).indexOf(!0)}function u(n,r){return function(t){var e="";return t.replace(n,function(n,t,a){return e=t.replace(r,"")+"."+(a||"").substring(1)}),l(e)}}function i(n){var t=l(n);return!isNaN(t)&&r(""+t)+1>=r(n)?t:NaN}function s(n){var e=[];return t([i,m,g],function(t){var a;r(e)||o(a=n.map(t),isNaN)||(e=a)}),e}function c(n){var t=s(n);if(!r(t)){var o=a(n),u=a(n.map(e)),i=n.map(function(n){return n.substring(o,r(n)-u)});t=s(i)}return t}function f(n){var r=n.map(Date.parse);return o(r,isNaN)?[]:r}function v(n,r){r(n),t(n.childNodes,function(n){v(n,r)})}function d(n){var r,t=[],e=[];return v(n,function(n){var a=n.nodeName;"TR"==a?(r=[],t.push(r),e.push(n)):("TD"==a||"TH"==a)&&r.push(n)}),[t,e]}function p(n){if("TABLE"==n.nodeName){for(var e=d(n),a=e[0],o=e[1],u=r(a),i=u>1&&r(a[0])<r(a[1])?1:0,s=i+1,v=a[i],p=r(v),l=[],m=[],g=[],h=s;u>h;++h){for(var N=0;p>N;++N){r(m)<p&&m.push([]);var T=a[h][N],C=T.textContent||T.innerText||"";m[N].push(C.trim())}g.push(h-s)}var L="tg-sort-asc",E="tg-sort-desc",b=function(){for(var n=0;p>n;++n){var r=v[n].classList;r.remove(L),r.remove(E),l[n]=0}};t(v,function(n,t){l[t]=0;var e=n.classList;e.add("tg-sort-header"),n.addEventListener("click",function(){function n(n,r){var t=d[n],e=d[r];return t>e?a:e>t?-a:a*(n-r)}var a=l[t];b(),a=1==a?-1:+!a,a&&e.add(a>0?L:E),l[t]=a;var i=m[t],v=function(n,r){return a*i[n].localeCompare(i[r])||a*(n-r)},d=c(i);(r(d)||r(d=f(i)))&&(v=n);var p=g.slice();p.sort(v);for(var h=null,N=s;u>N;++N)h=o[N].parentNode,h.removeChild(o[N]);for(var N=s;u>N;++N)h.appendChild(o[s+p[N-s]])})})}}var l=parseFloat,m=u(/^(?:\s*)([+-]?(?:\d+)(?:,\d{3})*)(\.\d*)?$/g,/,/g),g=u(/^(?:\s*)([+-]?(?:\d+)(?:\.\d{3})*)(,\d*)?$/g,/\./g);n.addEventListener("DOMContentLoaded",function(){for(var t=n.getElementsByClassName("tg"),e=0;e<r(t);++e)try{p(t[e])}catch(a){}})}(document);</script>
+</table>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div>
+    <p style="float: left;"><img src="./files/light_bulb.png" height="45px" width="45px" alt="Por favor abrir o arquivo junto com a pasta files/"></p>
+    <p>Essa configuração de bases sugere que o sistema que controla os dados tem que ser extremamente seguro porém versatil o suficente para que clientes e cientistas internos consigam os dados com permissões diferentes para criar soluções inovadoras à medida.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2><b>Armazenamento e Processamento</b></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A escolha do armazenamento e processamento é na <i>cloud</i> da Amazon.</p>
+<div>
+    <p style="float: left; padding-right: 20px;"><img src="./files/aws.png" height="150px" width="150px" alt="Por favor abrir o arquivo junto com a pasta files/"></p>
+    <p>
+        <li>Grande possibilidade de escalar.</li>
+        <li>Extra segurança.</li>
+        <li>Muitas ferramentas parceiras.</li>
+        <li>Confiabilidade do 99.99%</li>
+    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As tecnologias escolhidas para as bases externas.</p>
+<table>
+  <tr>
+    <th>Base A</th>
+    <th>Base B</th>
+    <th>Base C</th>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="https://safenet.gemalto.com/uploadedImages/images/Logos/postgresql-logo.png" height="150px" width="150px" alt="Postgres"></td>
+    <td><img src="http://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f4a5b21d-66fa-4885-92bf-c4e81c06d916/Image/e5eee315a17de0d7f56117077eb71fa9/mongo.png" height="150px" width="150px" alt="Mongo"></td>
+  </tr>
+   <tr>
+    <td colspan="2">Postgres é excelente em segurança e facilidade de implementação.</td>
+    <td>Mongo é rapido e consegue guardar JSON's como dados, o que permite alterar os dados sem ter que modificar a sua estrutura.</td>
+  </tr>
+</table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Seguran&#231;a">Seguran&#231;a<a class="anchor-link" href="#Seguran&#231;a">&#182;</a></h4><p>Sendo uma estrutra decentralizada ou monolítica, sempre terá um gargalo, que são as permissões e acceso dos usuarios. Pois se as credenciais caem em mãos erradas podem ultrapassar qualquer segurança.</p>
+<p>A segurança (especialmente a da Base A e a Base B) tem que estar dentro dos padrôes do  <a href="https://en.wikipedia.org/wiki/FIPS_140-2">FIPS 140–2</a> e serem a nivel de arquivos. Alguns algoritmos com essas caracteristicas sâo:</p>
+<li>Chave simétrica AES, Triple-DES.</li>
+<li>Chave assimétrica DSA, RSA, ECDSA.</li>
+<li>Os padrôes <i>Hash</i> (SHA-1, SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, SHA-512/256)</li>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hadoop Distributed File System</p>
 
-    </div>
 </div>
 </div>
-
 </div>
     </div>
   </div>
