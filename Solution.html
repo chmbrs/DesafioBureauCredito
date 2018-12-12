@@ -16349,8 +16349,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h1 style="color:#BA307E;"><center>Armazenamento, Processamento e Disponibilização de Dados</center></h1></p>
-<h2 style="color:#992882;"><center>Bureu de Crédito</center></h2>
+<p><h1 style="color:#BA307E;"><center><b>Armazenamento, Processamento e Disponibilização de Dados</b></center></h1></p>
+<h2 style="color:#992882;"><center><b>Bureu de Crédito</b></center></h2>
 </div>
 </div>
 </div>
@@ -16401,7 +16401,7 @@ div#notebook {
     <td>...</td>
     <td>...</td>
   </tr>
-</table><h4 id="Base-B">Base B<a class="anchor-link" href="#Base-B">&#182;</a></h4><table>
+</table><h4 id="Base-B">Base B<a class="anchor-link" href="#Base-B">&#182;</a></h4><p><table>
   <tr>
     <th>ID</th>
     <th>Idade</th>
@@ -16414,7 +16414,9 @@ div#notebook {
     <td>...</td>
     <td>...</td>
   </tr>
-</table><h4 id="Base-C">Base C<a class="anchor-link" href="#Base-C">&#182;</a></h4><ul>
+</table>
+(Dados utilizados para o calculo do <i>Score</i>.)</p>
+<h4 id="Base-C">Base C<a class="anchor-link" href="#Base-C">&#182;</a></h4><ul>
 <li>Última consulta do CPF em um Bureau de crédito.</li>
 <li>Movimentação financeira nesse CPF.</li>
 <li>Dados relacionados a última compra com cartao de crédito vinculado ao CPF.</li>
@@ -16426,21 +16428,24 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Cada-um-tem-particularidades-e-requerimentos:">Cada um tem particularidades e requerimentos:<a class="anchor-link" href="#Cada-um-tem-particularidades-e-requerimentos:">&#182;</a></h4><table id="particularities">
+<h4 id="Requerimentos-e-Particularidades:">Requerimentos e Particularidades:<a class="anchor-link" href="#Requerimentos-e-Particularidades:">&#182;</a></h4><table id="particularities">
   <tr>
     <th>Base</th>
     <th>Segurança</th>
     <th>Performance</th>
+    <th>Particularidade</th>
   </tr>
   <tr>
     <td>A</td>
     <td>Alta</td>
     <td>Baixa</td>
+    <td>Só consulta.</td>
   </tr>
   <tr>
     <td>B</td>
     <td>Media</td>
     <td>Media</td>
+    <td>Extração por meio de algoritmos de Machine Learning.</td>
   </tr>
   <tr>
     <td>C</td>
@@ -16456,7 +16461,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <div>
     <p style="float: left;"><img src="./files/light_bulb.png" height="45px" width="45px" alt="Por favor abrir o arquivo junto com a pasta files/"></p>
-    <p>Essa configuração de bases sugere que o sistema que controla os dados tem que ser extremamente seguro porém versatil o suficente para que clientes e cientistas internos consigam os dados com permissões diferentes para criar soluções inovadoras à medida.</p>
+    <p>Essa configuração de bases sugere que o sistema que controla os dados tem que ser extremamente seguro porém versátil o suficiente para que clientes e cientistas internos consigam os dados com permissões diferentes para criar soluções inovadoras à medida.</p>
 </div>
 </div>
 </div>
@@ -16499,8 +16504,8 @@ div#notebook {
     <td><img src="http://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f4a5b21d-66fa-4885-92bf-c4e81c06d916/Image/e5eee315a17de0d7f56117077eb71fa9/mongo.png" height="150px" width="150px" alt="Mongo"></td>
   </tr>
    <tr>
-    <td colspan="2">Postgres é excelente em segurança e facilidade de implementação.</td>
-    <td>Mongo é rapido e consegue guardar JSON's como dados, o que permite alterar os dados sem ter que modificar a sua estrutura.</td>
+    <td colspan="2"><i>Postgres</i> é excelente em segurança e facilidade de implementação.</td>
+    <td>Mongo é rápido e consegue guardar JSON's como dados, o que permite alterar os dados sem ter que modificar a sua estrutura.</td>
   </tr>
 </table>
 </div>
@@ -16509,8 +16514,43 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Seguran&#231;a">Seguran&#231;a<a class="anchor-link" href="#Seguran&#231;a">&#182;</a></h4><p>Sendo uma estrutra decentralizada ou monolítica, sempre terá um gargalo, que são as permissões e acceso dos usuarios. Pois se as credenciais caem em mãos erradas podem ultrapassar qualquer segurança.</p>
-<p>A segurança (especialmente a da Base A e a Base B) tem que estar dentro dos padrôes do  <a href="https://en.wikipedia.org/wiki/FIPS_140-2">FIPS 140–2</a> e serem a nivel de arquivos. Alguns algoritmos com essas caracteristicas sâo:</p>
+<h4 id="Apache">Apache<a class="anchor-link" href="#Apache">&#182;</a></h4><h5 id="Spark">Spark<a class="anchor-link" href="#Spark">&#182;</a></h5><table>
+  <tr>
+      <td><img src="https://spark.apache.org/images/spark-logo-trademark.png" height="200px" width="200px" alt="Apache Spark"></td>
+  </tr>
+</table><p>Apache Spark é um cluster geral <b>rápido</b> para processamento de dados em grande escala.</p>
+<p>Ele tem diversos API's de alto nível. Um deles é o PySpark.</p>
+<p><div>
+    <p style="float: left; padding-right: 10px;"><img src="https://miro.medium.com/max/852/1*nPcdyVwgcuEZiEZiRqApug.jpeg" height="80px" width="80px"  alt="Apache Spark"></p>
+    <p>
+    O Pyspark é perfeito para nossa aplicação, por que Python é a <i>lingua franca</i> do Machine Learning. E no nosso exemplo isso torna-se muito útil para interagir com a Base B através dos algoritmos de aprendizado de maquina.
+    </p>
+</div>
+(Apache Spark também tem uma biblioteca de <i>Machine Learning</i> - MLlib)</p>
+<h5 id="Kafka">Kafka<a class="anchor-link" href="#Kafka">&#182;</a></h5><table>
+  <tr>
+      <td><img src="https://kafka.apache.org/images/logo.png" height="200px" width="200px" alt="Apache Kafka"></td>
+  </tr>
+</table><p>Kafka é usado para construir <i>pipelines</i> de dados e aplicativos de <i>streaming</i>. É extremamente rápido e escalável. Ele conecta os sistemas externos e cria os <i>streams</i> de dados que serão consumidos depois.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div>
+    <p style="float: left;"><img src="./files/light_bulb.png" height="25px" width="25px" alt="Por favor abrir o arquivo junto com a pasta files/"></p>
+    <p>Apache é uma parceira tecnológica da Amazon.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Seguran&#231;a">Seguran&#231;a<a class="anchor-link" href="#Seguran&#231;a">&#182;</a></h4><p>Sendo uma estrutura decentralizada ou monolítica, sempre terá um gargalo, que são as permissões e aceso dos usuários. Se as credenciais caem em mãos erradas podem ultrapassar qualquer segurança. Mantendo sempre uma auditoria rigorosa e dando as permissões adequadas aos usuários e aplicativos certos, esse problema pode ser minimizado.</p>
+<p>Para manter a segurança dos dados (especialmente a da Base A e a Base B) a criptografia tem que ser a nível do sistema distribuído de arquivos e estar dentro dos padrôes do  <a href="https://en.wikipedia.org/wiki/FIPS_140-2">FIPS 140–2</a>. Alguns algoritmos com essas caracteristicas sâo:</p>
 <li>Chave simétrica AES, Triple-DES.</li>
 <li>Chave assimétrica DSA, RSA, ECDSA.</li>
 <li>Os padrôes <i>Hash</i> (SHA-1, SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, SHA-512/256)</li>
@@ -16520,7 +16560,54 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Hadoop Distributed File System</p>
+<p>O sistema toda é montado na Amazon S3 e a escalabilidade é atingida a traves de instâncias da Amazon EC2</p>
+<table>
+  <tr>
+    <td><img src="https://braze-marketing-assets.s3.amazonaws.com/images/partner_logos/amazon-s3.png" height="200px" width="200px" alt="S3"></td>
+    <td><img src="https://datadog-prod.imgix.net/img/aws-integrations/amazon_ec2.png" height="200px" width="200px" alt="EC2"></td>
+  </tr>
+</table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div>
+    <p style="float: left;"><img src="./files/light_bulb.png" height="45px" width="45px" alt="Por favor abrir o arquivo junto com a pasta files/"></p>
+    <p>Uma ideia para usar Machine Learning, seria utilizar TensorFlow e criar uma rede neural densamente conectada com os dados da Base B como <i>features</i> e se a divida foi paga ou não (da Base A) como <i>labels</i> e tentar predecir quais futuros clientes pagaram as dividas e quais não.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2><b>Disponibilização dos Dados</b></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Depois dos dados serem armazenados, tratados e consumidos. A disponibilidade deles é através de API, então uma forma rápida é usando Javascript diretamente nos <i>requests</i> à API e mostrados elegantemente com HTML5 e CSS3.</p>
+<p>Para uma camada extra de <a href="https://docs.djangoproject.com/en/2.1/topics/security/">segurança</a> e autenticação usamos Django, que tem proteção inherente contra:
+    <li><i>Cross site scripting</i> (XSS).</li>
+    <li>Requisisão falsificada de <i>cross site</i> (CSRF).</li>
+    <li>Injecção SQL.</li> 
+    <li><i>Clickjacking.</i></li></p>
+<table>
+  <tr>
+   <td><img src="https://deal5star.com/wp-content/uploads/2018/01/html-css-js.png" height="250px" width="250px" alt="EC2"></td>
+   <td><img src="https://www.djangoproject.com/m/img/logos/django-logo-negative.png" height="250px" width="250px" alt="S3"></td>
+  </tr>
+</table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 
 </div>
 </div>
