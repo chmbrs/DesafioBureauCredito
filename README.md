@@ -33,6 +33,7 @@ Referências:
 - Documentação Django https://www.djangoproject.com/
 - API Pyspark http://spark.apache.org/docs/2.2.0/api/python/pyspark.html
 - FIPS 140-2 https://en.wikipedia.org/wiki/FIPS_140-2
+- Pyspark, Machine Learning e MLlib https://towardsdatascience.com/machine-learning-with-pyspark-and-mllib-solving-a-binary-classification-problem-96396065d2aa
 - https://kafka.apache.org/
 - https://spark.apache.org/
 - https://aws.amazon.com/solutions/case-studies
