@@ -14,7 +14,7 @@ python -m pip install --upgrade pip
 python -m pip install jupyter
 ```
 
-Depois da instalação tem que navegar na linha de comando até onde está este README e o arquivo Solution.ipynb junto com a pasta "files".
+Depois da instalação tem que navegar na linha de comando até onde está este README e o arquivo Solution.ipynb junto com a pasta "/files".
 Nessa pasta basta digitar jupyter notebook e selecionar o Notebook.
 Exemplo:
 ```
@@ -22,4 +22,24 @@ cd C:\folder\desafio_bureau_credito
 jupyter notebook
 ```
 
-Se não quiser instalar nada, o arquivo Solution.html pode ser aberto, e com conecção à internet a solução poderá ser vizualisada.
+Sem instalar nada, o arquivo Solution.html pode ser aberto em qualquer navegador, e com conecção à internet a solução poderá ser vizualisada. (O arquivo ainda tem que ser aberto junto com a pasta "/files")
+
+Obs: As soluções são responsivas.
+
+Referências:
+
+
+- https://docs.djangoproject.com/en/2.1/topics/security/
+- Documentação Django https://www.djangoproject.com/
+- API Pyspark http://spark.apache.org/docs/2.2.0/api/python/pyspark.html
+- FIPS 140-2 https://en.wikipedia.org/wiki/FIPS_140-2
+- https://kafka.apache.org/
+- https://spark.apache.org/
+- https://aws.amazon.com/solutions/case-studies
+- https://github.com/arthurmoreno
+- https://aws.amazon.com/s3/
+- https://aws.amazon.com/ec2/
+- Documentação Postgres https://www.postgresql.org/
+- Documentação Mongo https://www.mongodb.com/
+
+- O diagrama foi feito em https://www.draw.io/ e as imagens tem licencia livre sem fins comerciais.
