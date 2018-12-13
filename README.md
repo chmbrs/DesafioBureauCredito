@@ -14,7 +14,7 @@ python -m pip install --upgrade pip
 python -m pip install jupyter
 ```
 
-Depois da instalação tem que navegar na linha de comando até onde está este README e o arquivo Solution.ipynb junto com a pasta "/files".
+Depois da instalação tem que navegar na linha de comando até onde está este README e o arquivo Solution.ipynb junto com a pasta "files/".
 Nessa pasta basta digitar jupyter notebook e selecionar o Notebook.
 Exemplo:
 ```
@@ -22,7 +22,7 @@ cd C:\folder\desafio_bureau_credito
 jupyter notebook
 ```
 
-Sem instalar nada, o arquivo Solution.html pode ser aberto em qualquer navegador, e com conecção à internet a solução poderá ser vizualisada. (O arquivo ainda tem que ser aberto junto com a pasta "/files")
+Sem instalar nada, o arquivo Solution.html pode ser aberto em qualquer navegador, e com conecção à internet a solução poderá ser vizualisada. (O arquivo ainda tem que ser aberto junto com a pasta "files/")
 
 Obs: As soluções são responsivas.
 
