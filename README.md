@@ -26,9 +26,23 @@ Sem instalar nada, o arquivo Solution.html pode ser aberto em qualquer navegador
 
 Obs: As soluções são responsivas.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Referências:
-
-
 - https://docs.djangoproject.com/en/2.1/topics/security/
 - Documentação Django https://www.djangoproject.com/
 - API Pyspark http://spark.apache.org/docs/2.2.0/api/python/pyspark.html
