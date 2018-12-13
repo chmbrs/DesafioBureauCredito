@@ -22,7 +22,7 @@ cd C:\folder\desafio_bureau_credito
 jupyter notebook
 ```
 
-Sem instalar nada, o arquivo Solution.html pode ser aberto em qualquer navegador, e com conecção à internet a solução poderá ser vizualisada. (O arquivo ainda tem que ser aberto junto com a pasta "files/")
+Sem instalar nada, o arquivo "Solution.html" pode ser aberto em qualquer navegador, e com conexão à internet a solução poderá ser vizualisada corretamente. (O arquivo ainda tem que ser aberto junto com a pasta "files/")
 
 Obs: As soluções são responsivas.
 
